@@ -1,8 +1,18 @@
 <!-- First HTML Project -->
+<!DOCTYPE html>
 <html>
     <head>
+        <!-- Make sure browser knows what encoding you want -->
+        <meta charset="utf-8">
         <!-- Adds title to page (title) -->
         <title>Hello World!</title>
+        <!-- Adds description to your page -->
+        <meta name="description" content="Write Description" >
+        <!-- Links a style sheet -->
+        <link rel="stylesheet" href="my_css_file.css">
+        <!-- Links java script -->
+        <script src="my_javascript_library.js"></script>
+        <script src="another_javascript_file.js"></script>
     </head>
     <body>
         <!-- Heading tag (h1) -->
@@ -16,5 +26,83 @@
             <li>two</li>
             <li>three</li>
         </ul>
+        <!-- Text link -->
+        <a href="http://www.google.com">Click here to go to Google</a>
+        <!-- Image link -->
+        <a href="http://www.google.com">
+            <img src="https://www.google.com/images/srpr/logo4w.png">
+        </a>
+        <!-- Table example -->
+        <table>
+            <!-- Head of the Table -->
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone number</th>
+                </tr>
+            </thead>
+            <!-- Body of your table -->
+            <tbody>
+                <tr>
+                    <td>Sample Name</td>
+                    <td>an_email@gmail.com</td>
+                    <td>555-5555</td>
+                </tr>
+                <tr>
+                    <td>Another Name</td>
+                    <td>another_email@gmail.com</td>
+                    <td>444-4444</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- Form example -->
+        <form action="process.php" method="post">
+            <!-- Text boxes -->
+            <p>Please Register</p>
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name">
+        
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name">
+        
+            <label id="email">Email:</label>
+            <input type="text" id="email" name="email">
+            <!-- Radio button -->
+            <p>Select your gender:</p>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male">
+        
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="female">
+            <!-- Check box -->
+            <p>Select 3 of your favorite colors:</p>
+            <label for="blue">Blue</label>
+            <input type="checkbox" id="blue" name="color" value="blue">
+            
+            <label for="green">Green</label>
+            <input type="checkbox" id="green" name="color" value="green">
+        
+            <label for="red">Red</label>
+            <input type="checkbox" id="red" name="color" value="red">
+            
+            <label for="black">Black</label>
+            <input type="checkbox" id="black" name="color" value="black">
+        
+            <label for="purple">Purple</label>
+            <input type="checkbox" id="purple" name="color" value="Purple">
+            
+            <!-- text area -->
+            <p>Say a few words about yourself:</p>
+            <textarea name="description"></textarea>
+            <!-- password -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+
+            <label for="pw_confirm">Password Confirmation:</label>
+            <input type="password" id="pw_confirm" name="password_confirmation">
+            <!-- Button -->
+            <input type="submit" value="Click here to register">
+        </form>
     </body>
 </html>
