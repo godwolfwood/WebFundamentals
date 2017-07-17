@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Make sure browser knows what encoding you want -->
+        <meta charset="utf-8">
+        <!-- Adds title to page -->
+        <title>My Registraion Form</title>
+        <!-- Adds description to your page -->
+        <meta name="description" content="Basic Registration form" >
+    </head>
+    <body>
+        <form>
+            <h1>My Registration Form</h1>
+            <!-- Table to organise some of the info -->
+            <table>
+                <tr>
+                    <td><label for="first_name">First Name:</label></td>
+                    <td><input type="text" id="first_name" name="first_name"></td>
+                </tr>
+                <tr>
+                    <td><label for="last_name">Last Name:</label></td>
+                    <td><input type="text" id="last_name" name="last_name"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" id="email" name="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td><input type="password" id="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td><label for="pw_confirmed">PW confirmed</label></td>
+                    <td><input type="password" id="pw_confirmed" name="pw_confirmed"></td>
+                </tr>
+                
+                <tr>
+                    <td><label for="birthday">Birthday</label></td>
+                    <td><input type="date" id="birthday" name="birthday"></td>
+                </tr>
+            </table>
+            <!-- Radio list -->
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="female">
+            <label for="other">Other</label>
+            <input type="radio" name="other" value="other">
+            <!-- text area -->
+            <p>A short description about yourself:</p>
+            <textarea name="description"></textarea>
+            <br><br>
+            <!-- drop down list -->
+            <label for="language">Favorite Language</label>
+            <select name="language">
+                <option value="JavaScript">JavaScript</option>
+                <option value="HTML">HTML</option>
+            </select>
+            <br><br>
+            <!-- submit button -->
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
